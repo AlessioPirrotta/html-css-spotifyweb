@@ -1,0 +1,73 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+header .upbar{
+    width: 100%;
+    height: 100px;
+    background-color:rgba(8, 11, 18, .5) ;
+    position: fixed;
+}
+
+section.a{
+    background-color: rgba(20, 25, 34, 1) ;
+    overflow: hidden;
+}
+
+div.leftbar{
+    width: 10%;
+    height: 100vh;
+    background-color: black;
+}
+
+
+div.downbar{
+    width: 100%;
+    height: 100px;
+    background-color:#282828 ;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.spot,.home{
+    fill: white;
+    scale: 1.5;
+}
+
+div.upbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.upleft {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    align-items: center;
+    gap: 30px;
+}
+
+div.upright {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5px ;
+   
+}
+
+.upright button{
+    flex-basis: 80%;
+    height: 40px;
+    color: white;
+    background-color: transparent;
+    border:gray solid 1px ;
+    border-radius: 30px;
+    font-size: 10px;
+}
+
