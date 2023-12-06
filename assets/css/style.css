@@ -4,20 +4,40 @@ padding: 0;
 box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
 
 html{
-    font-family:'Roboto', sans-serif;
+    font-family:'Montserrat', sans-serif;
+}
+
+header{
+    left: 50px;
+    right:0px;
+    height: 100px;
+    background-color:rgba(8, 11, 18, .5) ;
+    position: fixed;
+
+}
+
+
+
+img{
+    display: block;
+    width: 100%;
 }
 
 
 header .upbar{
-    width: 100%;
+    left: 50px;
+    right:0px;
     height: 100px;
     background-color:rgba(8, 11, 18, .5) ;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
     z-index: 2;
 }
+
 
 section.a{
     background-color: rgba(20, 25, 34, 1) ;
@@ -27,7 +47,7 @@ section.a{
 }
 
 div.leftbar{
-    width: 10%;
+    width: 50px;
     height: 100vh;
     background-color: black;
     position: fixed;
@@ -39,7 +59,7 @@ div.leftbar{
 
 div.downbar{
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color:#282828 ;
     position: absolute;
     bottom: 0;
@@ -50,6 +70,8 @@ svg{
     fill: white;
     scale: 1.5;
 }
+
+
 
 div.upbar{
     display: flex;
@@ -74,6 +96,8 @@ div.upright {
    
 }
 
+
+
 .upright button{
     flex-basis: 80%;
     height: 40px;
@@ -89,11 +113,22 @@ div.upright {
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 110px;
+    top: 100px;
     gap: 20px;
     width: 100%;
 
 }
+
+.spot{
+    position: absolute;
+    top:-80px;
+}
+
+.home{
+    position: absolute;
+    top:-40px;
+}
+
 
 .lens{
     opacity: .5;
@@ -156,13 +191,104 @@ nav{
     height: 100px;
     color: rgb(128, 128, 128, .8);
     margin-top: 100px;
-    padding-left: 10%;
+    padding-left: 50px;
+    padding-top: 20px;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     font-size: 12px;
     font-weight: 700;
+    gap: 20px;
 }
+
+nav span{
+    flex-basis: calc(100%/6) -20px;
+}
+
+.middle{
+    width: 100%;
+    height: 515px;
+    color: white;
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 700;
+    overflow: scroll;
+
+}
+
+.middle h1{
+    font-size: 20px;
+    margin-block: 20px;
+    height: 20px;
+}
+
+.albums{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    gap: 10px;
+
+    
+}
+
+.disco{
+    flex-basis: calc(100% / 2 - 20px);
+}
+
+.wdisco{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    gap: 10px ;
+}
+
+.wdisco span{
+    color: rgb(128, 128, 128, .8);
+}
+
+.creatoper{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    gap: 10px;
+
+}
+
+#nomarg{
+margin-bottom: 10px;
+}
+
+.container span{
+    font-size: 10px;
+    color: rgb(128, 128, 128, .8);  
+}
+
+.popolari{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    gap: 10px;
+
+}
+
+
+.round img{
+    width: 100%;
+    border-radius: 200px;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+
 
 
 
