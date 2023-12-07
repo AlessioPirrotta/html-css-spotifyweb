@@ -83,7 +83,7 @@ div.upright {
     align-items: center;
     justify-content: flex-end;
     padding-right: 5px ;
-   
+
 }
 
 
@@ -127,7 +127,7 @@ div.upright {
 img.library{
     width: 25px;
     display: block;
-    
+
 }
 
 .downleftbar{
@@ -169,7 +169,7 @@ img.library{
 
 .user{
     width: 15px;
-    
+
 }
 
 .bgray{
@@ -221,7 +221,7 @@ nav span{
     padding-bottom: 50px;
     gap: 10px;
 
-    
+
 }
 
 .disco{
@@ -258,7 +258,7 @@ margin-bottom: 10px;
 
 .container span{
     font-size: 10px;
-    color: rgb(128, 128, 128, .8);  
+    color: rgb(128, 128, 128, .8);
 }
 
 .popolari{
@@ -286,19 +286,23 @@ div.downbar{
     position: absolute;
     bottom: 0px;
     display: flex;
-    justify-content: center;
-    
+    justify-content: flex-start;
+    align-items: center;
+
 
 }
 
-.sinister{
-    width: 10%;
+
+.sinister img{
+    width: 40px;
 }
 
 .leftdownbar{
+    width: 25%;
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-left: 20px;
 }
 
 .wdownbar{
@@ -323,13 +327,17 @@ div.downbar{
 }
 
 .heafol svg{
-    scale: .8;
+    width: 60%;
     fill: rgb(128, 128, 128, .8);
 }
 
 .middledownbar{
+    width: 40%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .flexup{
@@ -338,6 +346,7 @@ div.downbar{
 }
 
 .flexup svg{
+    width: 10%;
     scale: .9;
 }
 
@@ -346,25 +355,76 @@ div.downbar{
 }
 .flexdown{
     position: relative;
-
+    width: 100%;
 }
 
-.flexdown span{
+.flexdown span#head{
+    position: absolute;
     font-size: 9px;
+    left: 18%;
+
 }
 
 .flexdown hr{
+    position: absolute;
     display: inline-block;
-    width: 10%;
+    width: 5%;
+    left: 30%;
+    top:5px
 }
 
 #hb{
     position: absolute;
     top: 13px;
     border: 1px solid rgb(128, 128, 128, .8);
-    width: 60%;
+    width: 35%;
+    left: 35%;
+    top:5px
 
 }
+
+.flexdown span#tail{
+    position: absolute;
+    font-size: 9px;
+    right: 18%;
+}
+
+.rightdownbar{
+    position: relative;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.rightdownbar svg{
+    scale: .8;
+    fill:white;
+}
+
+.bar{
+    display: flex;
+}
+
+.bar hr{
+    width: 10px;
+}
+
+#hc{
+    width: 20px;
+    border: 1px solid rgb(128, 128, 128, .8);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
