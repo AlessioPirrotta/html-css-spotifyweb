@@ -50,6 +50,7 @@ div.leftbar{
     width: 50px;
     height: 100vh;
     background-color: black;
+    padding-top: 30px;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -86,8 +87,6 @@ div.upright {
 
 }
 
-
-
 .upright button{
     flex-basis: 80%;
     height: 40px;
@@ -99,7 +98,6 @@ div.upright {
 }
 
 .middleleftbar{
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,30 +107,44 @@ div.upright {
 
 }
 
+.sidew{
+    display: flex;
+    gap: 10px;
+}
+
+.sidew span{
+   display: none;
+}
+
 .spot{
-    position: absolute;
-    top:-80px;
+    scale: 2;
+    margin-bottom: 10px;
+}
+.spotlg{
+    top:-90px;
+    scale: .8;
+    display: none;
+
 }
 
 .home{
-    position: absolute;
-    top:-40px;
+    margin-bottom: 5px;
 }
+
 
 
 .lens{
     opacity: .5;
 }
 
-img.library{
-    width: 25px;
-    display: block;
+.library{
+  width: 15px;
 
 }
 
 .downleftbar{
     width: 100%;
-    height: 200px;
+    height: 400px;
     position: relative;
     top: 430px;
     display: flex;
@@ -197,10 +209,10 @@ nav span{
 
 .middle{
     width: 100%;
-    height: 700px;
+    height: 900px;
     color: white;
     padding-left: 70px;
-    padding-bottom: 70%;
+    padding-bottom: 10%;
     display: flex;
     flex-direction: column;
     font-size: 12px;
@@ -414,6 +426,72 @@ div.downbar{
 #hc{
     width: 20px;
     border: 1px solid rgb(128, 128, 128, .8);
+}
+
+/* -------------------Media Query---------------- */
+
+@media screen and (min-width:639px) {
+    div.leftbar{
+        width: 200px;
+        height: 100vh;
+        background-color: black;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .middleleftbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 100px;
+        gap: 20px;
+        width: 100%;
+    
+    }
+
+    .downleftbar{
+        width: 100%;
+        height: 350px;
+        position: relative;
+        top: 430px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+    
+    }
+
+    .spot{
+        scale: 2;
+        margin-bottom: 10px;
+        display: none;
+    }
+    .spotlg{
+        top:-90px;
+        scale: .8;
+        display: block;
+    
+    }
+
+    .sidew{
+        display: flex;
+        gap: 10px;
+        padding-left: 25px;
+    }
+
+    .sidew span{
+        display: inline-block;
+     }
+
+
+  
+
+    
+
+    
 }
 
 
