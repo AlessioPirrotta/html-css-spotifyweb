@@ -56,16 +56,6 @@ div.leftbar{
     align-items: flex-start;
 }
 
-
-div.downbar{
-    width: 100%;
-    height: 80px;
-    background-color:#282828 ;
-    position: absolute;
-    bottom: 0;
-
-}
-
 svg{
     fill: white;
     scale: 1.5;
@@ -207,14 +197,15 @@ nav span{
 
 .middle{
     width: 100%;
-    height: 515px;
+    height: 700px;
     color: white;
     padding-left: 70px;
+    padding-bottom: 70%;
     display: flex;
     flex-direction: column;
     font-size: 12px;
     font-weight: 700;
-    overflow: scroll;
+    overflow: auto;
 
 }
 
@@ -247,7 +238,7 @@ nav span{
     gap: 10px ;
 }
 
-.wdisco span{
+span{
     color: rgb(128, 128, 128, .8);
 }
 
@@ -287,6 +278,100 @@ margin-bottom: 10px;
     object-fit: cover;
     aspect-ratio: 1;
 }
+
+div.downbar{
+    width: 100%;
+    height: 80px;
+    background-color:#282828 ;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.sinister{
+    width: 10%;
+}
+
+.leftdownbar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wdownbar{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wdownbar h3{
+    font-size: 12px;
+    color: white;
+}
+
+.wdownbar span{
+    font-size: 9px;
+
+}
+
+.heafol{
+    display: flex;
+    flex-direction: column;
+}
+
+.heafol svg{
+    scale: .8;
+    fill: rgb(128, 128, 128, .8);
+}
+
+.middledownbar{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexup{
+    display: flex;
+    gap: 20px;
+}
+
+.flexup svg{
+    scale: .9;
+}
+
+#play{
+    scale: 1.6;
+}
+.flexdown{
+    position: relative;
+
+}
+
+.flexdown span{
+    font-size: 9px;
+}
+
+.flexdown hr{
+    display: inline-block;
+    width: 10%;
+}
+
+#hb{
+    position: absolute;
+    top: 13px;
+    border: 1px solid rgb(128, 128, 128, .8);
+    width: 60%;
+
+}
+
+
+
+
+
+
+
 
 
 
