@@ -55,6 +55,7 @@ div.leftbar{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 400px;
 }
 
 svg{
@@ -142,11 +143,52 @@ div.upright {
 
 }
 
+.playlist{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 25px;
+    gap: 10px;
+}
+
+.middleleftbar h3{
+    color: white;
+    margin-top: 20px;
+    display: none;
+}
+
+.flexplus{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.flexplus span{
+    padding-top: 7px;
+    display: none;
+}
+
+.plus{
+    opacity: .5;
+    scale: 3;
+    margin-left: 15px;
+    margin-top: 10px;
+    display: none;
+}
+
+.flexname{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    display: none;
+}
+
+
+
 .downleftbar{
     width: 100%;
     height: 400px;
-    position: relative;
-    top: 430px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,6 +225,20 @@ div.upright {
     width: 15px;
 
 }
+
+.downleftbar hr{
+    width: 80%;
+    margin: 0 auto;
+    opacity: .5;
+    display: none;
+}
+
+.downleftbar h3{
+   color: white;
+   display: none;
+}
+
+
 
 .bgray{
     background-color: gray ;
@@ -252,6 +308,7 @@ nav span{
 
 span{
     color: rgb(128, 128, 128, .8);
+    font-weight: 600;
 }
 
 .creatoper{
@@ -432,13 +489,14 @@ div.downbar{
 
 @media screen and (min-width:639px) {
     div.leftbar{
-        width: 200px;
+        width: 250px;
         height: 100vh;
         background-color: black;
         position: fixed;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        gap: 0px;
     }
 
     .middleleftbar{
@@ -453,16 +511,14 @@ div.downbar{
 
     .downleftbar{
         width: 100%;
-        height: 350px;
-        position: relative;
-        top: 430px;
+        height: 400px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-end;
         gap: 10px;
-    
     }
+
 
     .spot{
         scale: 2;
@@ -470,7 +526,6 @@ div.downbar{
         display: none;
     }
     .spotlg{
-        top:-90px;
         scale: .8;
         display: block;
     
@@ -485,6 +540,76 @@ div.downbar{
     .sidew span{
         display: inline-block;
      }
+
+     .circlea{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        width: 20px;
+        aspect-ratio: 1;
+        border-radius: 100px;
+    }
+    
+    .circleb{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        width: 25px;
+        aspect-ratio: 1;
+        border-radius: 100px;
+    }
+    
+    .carrow{
+        scale: .7;
+    }
+    
+    .user{
+        width: 15px;
+    
+    }
+
+    .middleleftbar h3{
+        color: white;
+        display: block;
+    }
+
+    .plus{
+        opacity: .5;
+        scale: 3;
+        margin-left: 15px;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .flexname{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 20px;
+        
+    }
+
+    .flexplus span{
+        padding-top: 7px;
+        display:block ;
+    }
+
+
+    .downleftbar hr{
+        width: 80%;
+        margin: 0 auto;
+        opacity: .5;
+        display: block;
+    }
+
+    .downleftbar h3{
+        color: white;
+        display: block;
+     }
+
+   
 
 
   
