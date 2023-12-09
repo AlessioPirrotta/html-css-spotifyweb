@@ -48,7 +48,6 @@ section.a{
 
 div.leftbar{
     width: 50px;
-    height: 100vh;
     background-color: black;
     padding-top: 30px;
     position: fixed;
@@ -56,6 +55,7 @@ div.leftbar{
     flex-direction: column;
     align-items: flex-start;
     gap: 400px;
+    padding-bottom: 80px;
 }
 
 svg{
@@ -89,13 +89,14 @@ div.upright {
 }
 
 .upright button{
-    flex-basis: 80%;
+    flex-basis: 200px;
     height: 40px;
     color: white;
     background-color: transparent;
     border:gray solid 1px ;
     border-radius: 30px;
-    font-size: 10px;
+    font-size: 13px;
+    margin-right: 10px;
 }
 
 .middleleftbar{
@@ -140,6 +141,7 @@ div.upright {
 
 .library{
   width: 15px;
+  opacity: .5;
 
 }
 
@@ -254,13 +256,21 @@ nav{
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
     gap: 20px;
 }
 
 nav span{
     flex-basis: calc(100%/6) -20px;
+
+}
+
+
+.evi{
+    border-bottom: 1px lime solid;
+    
+
 }
 
 .middle{
@@ -294,7 +304,29 @@ nav span{
 
 .disco{
     flex-basis: calc(100% / 2 - 20px);
+
 }
+
+.imgdisco{
+    position: relative;
+}
+
+.imgdisco svg{
+    position: absolute;
+    scale: 4;
+    top: 50%;
+    left: 50%;
+    display: none;
+
+}
+
+
+
+.discob{
+    flex-basis: calc(100% / 2 - 20px);
+}
+
+
 
 .wdisco{
     padding-top: 10px;
@@ -323,6 +355,10 @@ span{
 
 #nomarg{
 margin-bottom: 10px;
+}
+
+.container{
+    width: 100%;
 }
 
 .container span{
@@ -355,7 +391,7 @@ div.downbar{
     position: absolute;
     bottom: 0px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
 
@@ -370,8 +406,9 @@ div.downbar{
     width: 25%;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 10px;
-    margin-left: 20px;
+    
 }
 
 .wdownbar{
@@ -442,6 +479,30 @@ div.downbar{
     top:5px
 }
 
+.flexdown .green{
+    position: absolute;
+    display: inline-block;
+    width: 5%;
+    left: 30%;
+    top:5px;
+    border: 1px solid lime;
+    display: none;
+    
+}
+
+.dot{
+    position: absolute;
+    width: 10px;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 50px;
+    left: 35%;
+    top:1px;
+    z-index: 2;
+    display: none;
+    
+}
+
 #hb{
     position: absolute;
     top: 13px;
@@ -463,6 +524,7 @@ div.downbar{
     width: 25%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 10px;
 
 }
@@ -474,10 +536,31 @@ div.downbar{
 
 .bar{
     display: flex;
+    position: relative;
 }
 
 .bar hr{
     width: 10px;
+}
+
+.greenb{
+    width: 10px;
+    position: absolute;
+    border: 1px solid lime;
+    display: none;
+    
+}
+
+.dotb{
+    position: absolute;
+    width: 10px;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 50px;
+    left: 35%;
+    top:-4px;
+    z-index: 2;
+    display: none;
 }
 
 #hc{
@@ -485,7 +568,99 @@ div.downbar{
     border: 1px solid rgb(128, 128, 128, .8);
 }
 
-/* -------------------Media Query---------------- */
+
+
+
+
+
+
+/* ---------------------Hover---------------------- */
+
+svg:hover{
+    opacity: 2;
+    fill: white;
+    cursor: pointer;
+}
+
+nav span:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.leftbar span:hover{
+    color: white;
+    cursor: pointer;
+}
+
+div .sidew:hover{
+    opacity: 2;
+    cursor: pointer;
+}
+
+div.flexup svg:hover{
+    scale:1.5;
+}
+
+div.flexup #play:hover{
+    scale:2;
+}
+
+.rightdownbar svg:hover{
+        scale:1.2;
+}
+
+.imgdisco:hover .show{
+    display: block;
+    cursor: pointer;
+}
+
+.imgdisco:hover .shadow {
+    opacity: .2;
+    cursor: pointer;
+}
+
+
+button:hover{
+    scale: 1.1;
+}
+
+.disco:hover{
+    cursor: pointer;
+}
+
+.disco:hover .shadow{
+    opacity: .2;
+    cursor: pointer;
+}
+
+.flexdown:hover .green{
+    display: block;
+    cursor: pointer;
+}
+
+.flexdown:hover .dot{
+    display: block;
+    cursor: pointer;
+}
+
+.bar:hover .greenb{
+    display: block;
+    cursor: pointer;
+}
+
+.bar:hover .dotb{
+    display: block;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* -------------------Media Queries---------------- */
 
 @media screen and (min-width:639px) {
     div.leftbar{
@@ -497,6 +672,7 @@ div.downbar{
         flex-direction: column;
         align-items: flex-start;
         gap: 0px;
+        padding-bottom: 80px;
     }
 
     .middleleftbar{
@@ -609,6 +785,113 @@ div.downbar{
         display: block;
      }
 
+     nav{
+        width: 100%;
+        height: 100px;
+        color: rgb(128, 128, 128, .8);
+        margin-top: 100px;
+        padding-left: 250px;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 700;
+        gap: 20px;
+    }
+    .middle{
+        width: 100%;
+        height: 900px;
+        color: white;
+        padding-left: 270px;
+        padding-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        font-weight: 700;
+        overflow: auto;
+    
+    }
+
+    div.downbar{
+        width: 100%;
+        height: 80px;
+        background-color:#282828 ;
+        position: absolute;
+        bottom: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+
+    .leftdownbar{
+        width: 23%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        scale: 1.5;
+        
+    }
+
+    .middledownbar{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        scale: 1.5;
+    }
+
+    .rightdownbar{
+        position: relative;
+        width: 23%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        scale: 1.5;
+    
+    }
+
+    
+
+   
+    
+}
+
+@media screen and (min-width:878px) {
+    .disco{
+        flex-basis: calc(100% / 4  - 20px);
+    }
+
+    .discob{
+        flex-basis: calc(100% / 4 - 20px);
+    }
+
+    nav span{
+        height: 30.5px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .disco{
+        flex-basis: calc(100% / 6  - 20px);
+    }
+    .discob{
+        flex-basis: calc(100% / 6 - 20px);
+    }
+    
+}
+
+   
+
+    
+
+
    
 
 
@@ -617,7 +900,6 @@ div.downbar{
     
 
     
-}
 
 
 
