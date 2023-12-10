@@ -263,15 +263,26 @@ nav{
 
 nav span{
     flex-basis: calc(100%/6) -20px;
+    height: 20px;
 
 }
 
 
 .evi{
-    border-bottom: 1px lime solid;
-    
+position: relative;
+height: 25px;
 
 }
+
+
+.evi::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    border-bottom: 2px solid lime;
+    width: 30%;
+ }
 
 .middle{
     width: 100%;
@@ -692,6 +703,7 @@ button:hover{
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-end;
+        padding-bottom: 20px;
         gap: 10px;
     }
 
